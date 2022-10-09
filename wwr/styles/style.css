@@ -1,0 +1,126 @@
+/*  08 - Setting a width*/
+/*  09 - Centering the page*/
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/*  10 - More Centering*/
+    /* #hero-msg = #fisrt_message_visitors*/
+.a{
+    text-align: center;
+}
+
+#Welcome_box{
+    text-align: center;
+}
+#fisrt_message_visitors h1, #fisrt_message_visitors h4{
+    text-align: center;
+}
+
+.button-box{
+    text-align: center;
+}
+
+.body_page{
+    text-align: center;
+}
+
+/* 11- Adding a container for our message background */
+#background {
+    height: 725px;
+}
+
+/* 12 Setting background colors*/
+
+body{
+    background-color:rgba(212, 212, 212, 0.1);
+}
+
+
+header{
+    background-color:rgba(59, 97, 219, 0.1);
+}
+
+
+nav a{
+    /*background-color:rgba(59, 96, 219, 0);*/
+   /* background-color: skyblue;*/
+    text-decoration: none;
+    color: black;   
+}
+nav a:hover{
+    background-color:  lightgreen   ;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.book, .join{
+    background-color: skyblue;
+    text-decoration: none;
+    color:  black;
+}
+
+.book:hover, .join:hover{
+    background-color:  lightgreen   ;
+    color: rgba(142, 45 ,45, 1);
+}
+
+
+#background{
+    max-block-size: none;
+    background-color: rgba(142, 45 ,45, 0.5) ;
+}
+
+.msg{
+    background-color:rgba(59, 97, 219, 0.1);
+}
+
+
+footer{
+    background-color:rgba(59, 97, 219, 0.1);
+    color: rgba(142, 45 ,45, 1);
+    /*color: black;*/
+}
+
+.home-title{
+color: rgba(142, 45 ,45, 1);
+}
+
+h4{
+    color: rgba(142, 45 ,45, 1);
+}
+
+
+
+.msg h2{
+color: rgba(59, 97, 219, 1);;
+
+}
+
+
+.msg p{
+color:rgba(59, 97, 219, 1); ;
+}
+
+
+
+
+footer a{
+    text-decoration: none;
+    color: rgba(142, 45 ,45, 1);
+}
+
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover{
+    color: white;
+    background-color:  rgba(142, 45 ,45, 1);
+    text-decoration: underline;
+}
+
+.icon {
+    width: 80px;
+}

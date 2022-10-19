@@ -1,19 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Fuzzy+Bubbles&family=Kaushan+Script&family=M+PLUS+Rounded+1c:wght@100&family=Varela+Round&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
+    font-family: 'Varela Round', Tahoma, Verdana;
+    font-size: 22px;
+
+}
+
+body{
+    background-color:rgba(212, 212, 212, 0.3);
 }
 
 /*  10 - More Centering*/
     /* #hero-msg = #fisrt_message_visitors*/
 .a{
     text-align: center;
+    
+}
+
+#My_logo_rafting{
+    padding-top: 5px;
 }
 
 #Welcome_box{
     text-align: center;
+    
 }
+
+
 #fisrt_message_visitors h1, #fisrt_message_visitors h4{
     text-align: center;
+    
 }
 
 .button-box{
@@ -22,6 +41,7 @@
 
 .body_page{
     text-align: center;
+
 }
 
 /* 11- Adding a container for our message background */
@@ -31,13 +51,12 @@
 
 /* 12 Setting background colors*/
 
-body{
-    background-color:rgba(212, 212, 212, 0.1);
-}
+
 
 
 header{
     background-color:rgba(59, 97, 219, 0.1);
+    
 }
 
 
@@ -45,17 +64,24 @@ nav a{
     /*background-color:rgba(59, 96, 219, 0);*/
    /* background-color: skyblue;*/
     text-decoration: none;
-    color: black;   
+    color: black;
+    font-size: 19px;   
+    padding: 35px;
 }
 nav a:hover{
     background-color:  lightgreen   ;
     color: rgba(0, 0, 0, 0.6);
+    font-size: 21px;
 }
 
 .book, .join{
     background-color: skyblue;
     text-decoration: none;
     color:  black;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -71,6 +97,8 @@ nav a:hover{
 
 .msg{
     background-color:rgba(59, 97, 219, 0.1);
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 
@@ -82,32 +110,39 @@ footer{
 
 .home-title{
 color: rgba(142, 45 ,45, 1);
+font-family: 'Fuzzy Bubbles',Tahoma, Verdana;
+font-size:  2em;
+margin-top: 10px;
+
 }
 
 h4{
     color: rgba(142, 45 ,45, 1);
 }
 
-
+h2{
+    margin: 0;
+}
 
 .msg h2{
 color: rgba(59, 97, 219, 1);;
 
 }
 
-
 .msg p{
-color:rgba(59, 97, 219, 1); ;
+color:rgba(59, 97, 219, 1); 
+font-size: 1.3em;
+padding-bottom: 15px;
 }
 
-
-
-
+footer{
+    padding: 25px 50px;
+    margin-top: 200px;
+}
 footer a{
     text-decoration: none;
     color: rgba(142, 45 ,45, 1);
 }
-
 
 footer p {
     font-size: 1.2em;
@@ -119,6 +154,23 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+footer .social img{
+    padding-top: 15px;
+}
+
+.rivers_image, .camping_image, .rapids_image {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid rgba(142, 45 ,45, 0.5);
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }

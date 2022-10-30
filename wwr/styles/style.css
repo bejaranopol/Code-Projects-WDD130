@@ -22,13 +22,39 @@ body{
 
 #My_logo_rafting{
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+    
 }
 
 #Welcome_box{
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+     grid-template-rows: 1fr;
+    margin-top: -100px; 
+   
     
 }
+#place_image_welcome{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
 
+#image_welcome
+{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+#fisrt_message_visitors{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
 
 #fisrt_message_visitors h1, #fisrt_message_visitors h4{
     text-align: center;
@@ -47,6 +73,8 @@ body{
 /* 11- Adding a container for our message background */
 #background {
     height: 725px;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
 /* 12 Setting background colors*/
@@ -55,16 +83,26 @@ body{
 
 
 header{
-    background-color:rgba(59, 97, 219, 0.1);
+   /* background-color:rgba(59, 97, 219, 0.3);*/
+    background-color:rgba(88, 52, 46, 0.3);
+    display: grid;
+    grid-template-columns: 150px auto;
+
+   
     
 }
 
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 nav a{
     /*background-color:rgba(59, 96, 219, 0);*/
    /* background-color: skyblue;*/
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 19px;   
     padding: 35px;
 }
@@ -95,13 +133,6 @@ nav a:hover{
     background-color: rgba(142, 45 ,45, 0.5) ;
 }
 
-.msg{
-    background-color:rgba(59, 97, 219, 0.1);
-    line-height: 1.5em;
-    padding: 35px;
-}
-
-
 footer{
     background-color:rgba(59, 97, 219, 0.1);
     color: rgba(142, 45 ,45, 1);
@@ -109,35 +140,57 @@ footer{
 }
 
 .home-title{
-color: rgba(142, 45 ,45, 1);
+/*color: rgba(142, 45 ,45, 1);*/
+color: rgba(217, 194 ,163,1);
 font-family: 'Fuzzy Bubbles',Tahoma, Verdana;
-font-size:  2em;
+font-size:  2.5em;
 margin-top: 10px;
 
 }
 
 h4{
     color: rgba(142, 45 ,45, 1);
+   /*color: rgba(217, 194 ,163,1);*/
+   margin-top: 48%;
+   font-size: 110%;
+   background-color: rgba(217, 194 ,163,0.4);;
 }
 
 h2{
     margin: 0;
 }
+.msg{
+    background-color:rgba(223, 227, 240, 1);
+    line-height: 1.2em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7 ;
+    box-shadow: 5px 5px 10px #6f7364;
+   
+
+}
 
 .msg h2{
-color: rgba(59, 97, 219, 1);;
+color: rgba(59, 97, 219, 1);
+font-size: 100%;
 
 }
 
 .msg p{
 color:rgba(59, 97, 219, 1); 
-font-size: 1.3em;
-padding-bottom: 15px;
+/*font-size: 1.3em;*/
+font-size: 50%;
+/*padding-bottom: 15px;*/
+
+
 }
 
 footer{
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer a{
     text-decoration: none;
@@ -145,7 +198,7 @@ footer a{
 }
 
 footer p {
-    font-size: 1.2em;
+    font-size: 85%;
 }
 
 footer p a:hover{
@@ -158,12 +211,34 @@ footer .social img{
     padding-top: 15px;
 }
 
-.rivers_image, .camping_image, .rapids_image {
-    margin: 200px 0;
+.river_image, .camping_image, .rapids_image {
+    margin: auto 0;
 }
 
 .card-img {
     border: 10px solid rgba(142, 45 ,45, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-img {
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+             
+
+
+.body_page{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    /*grid-template-rows: 100px auto 100px 100px 50px auto 50px 50px 100px ; */
+    grid-template-rows: 100px auto 100px 100px auto auto auto 100px 100px;
 }
 
 main section img {
@@ -174,3 +249,69 @@ main section img {
     width: 80px;
     padding-top: 10px;
 }
+
+.river_image{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping_image{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids_image{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.mountains{
+    grid-column: 2/7;
+    grid-row: 5/8;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px #6f7364;  
+}
+
+/* ****************************************************************************************************** */
+
+@media screen and (max-width: 900px) {
+    #Welcome_box, .body_page {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #Welcome_box {
+        margin-top: 0;
+    }
+    #fisrt_message_visitors {
+        margin-top: 0;
+    }
+    #fisrt_message_visitors h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .river_image, .camping_image .rapids_image { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+            
+

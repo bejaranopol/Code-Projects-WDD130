@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="p_site_styles.css">
+    <script>
+        function showtext(){
+            let x="Message sent!";
+            document.getElementById('footer_message').innerText=x;
+        }
+    </script>
 </head>
 <body>
-    <div id="content">
+    <div class="content">
 
-     <!-- ----------------------------------------------- HEADER -------------------------------------- -->  
+     <!--HEADER -->  
     <header>
-        <img class="logo" src="images/kazuha_logo.jpg" alt="">
+        <div class="pre_logo"><img class="logo" src="images/kazuha_logo.png" alt="icon">     </div>
         <img class="portada" src="https://images2.alphacoders.com/706/thumb-1920-706162.jpg" alt="portda_image">
         <nav >
             <a href="p_site_1home.html">Home</a>
@@ -25,17 +31,122 @@
             <p>Because we know that you have a passion for series, movies, anime and videogames, this space is for you</p>
         </section>
     </header>
-
-     <!-- ----------------------------------------------- Main -------------------------------------- -->
+    <br> <br>
+     <!--main -->  
     <main>
+        <section class="section1">
+            <div class="sc1_backg"></div>
+            <div class="sc1_parag"> <h3>Introduction</h3><p>Kazuha's Store is a store where you will find everything related 
+                to modern entertainment, we hope you can enjoy your visit today. We have a lot to offer you, so you
+                 can take a little walk through our website, we promise that here you will find the product 
+                 and item you are looking for </p></div>
+            <img class="sc1_img"  src="images/home/portada.png" alt="s1_portada">
+                
+
+        </section>
+        <br><br>
+        <section class="section2">
+            <div class="sc2_backg"></div>
+            <div class="sc2_parag">
+                <h3>About Us</h3>
+                <p>Our love and fanaticism for movies, anime, series, video games, and sweets motivated 
+                    us to start this great adventure in 2020 during the pandemic. In those times, people spent a
+                     lot of time at home and due to the restrictions it was difficult to find articles of our
+                      favorite series or program while it was broadcasting. Therefore, we decided to start this 
+                      business to bring happiness to fans in the midst of the pandemic</p>
+            </div>
+
+            <img class="sc2_img_circle" src="images/page2_movies_series/figuritas_2.jpg" alt="sc2_img1">
+            <img class="sc2_img_backg" src="images/home/suit_black.png" alt="sc2_imgb">
+
+        </section>
+
+        <br> <br>
+        <section class="section3">
+            <img class="sc3_backg" src="images/home/vision_our.png" alt="our_vision">
+            <h2>Our Vision</h2>
+            <p>We hope to be one of the best web pages to offer quality content and exclusive products for 
+                the city of Huaraz, we always have in mind the satisfaction of our customers, so we hope you can 
+                find here everything you need
+                to satisfy the Fan that is within you. <br> <br>
+                
+                Our logistics team will be in charge of assisting you and providing you with what you need,
+                 we are also fans just like you, so we know how to lend you a hand in what you are looking for ;)</p>
+
+        </section>
+
+        <section class="section4">
+            <div class="s4_backg"> </div>
+            <h2> Our Clients says!</h2>
+            <img class="op1" src="images/home/opinion1.png" alt="op1">
+            <div class="opinion1">             
+                <p>Kamila: I love this website! They are fast and simple, their offers are good, I didn't know where
+                     to find a case of my favorite anime, but here I found it! \(*-*)/</p>
+            </div>
+            <img class="op2" src="images/home/opinion_2.png" alt="op2">
+            <div class="opinion2"> 
+            
+                <p>Alexander: I'm a Harry Potter fan, so I was hoping to find a scarf to wear on Halloween, 
+                    not only did I find it if I didn't like it very much because of its quality, it's very good!</p>
+            </div>
+
+            <img class="op3" src="images/home/opinion3.png" alt="op3">
+            <div class="opinion3">
+                
+                <p>Isabella: I once thought if they would have the typical cookie from my favorite Squid Game
+                     series, I was very surprised when I saw it, don't hesitate to buy it.</p> 
+            </div>
+
+        </section>
 
     </main>
 
-    <!-- -----------------------------------------------Footer -------------------------------------- -->
+     <!--footer -->  
+    <br>
     <footer>
+        <div class="footer_backg"></div>
+        <h2 class="link">Links</h2>
+        <h2 class="contact_us">Contact Us</h2>
+        <menu class="list_link">  
+            <li><a href="p_site_1home.html">Home</a></li>  
+            <li><a href="p_site_2movies.html">Movies & Series</a></li>  
+            <li><a href="p_site_3anime.html">Anime World</a></li>  
+            <li><a href="p_site_4gamer.html">Gamer Zone</a></li>         
+        </menu>
+
+        <div class="text_contact">
+            <input class="text_name" type="text" placeholder="name"> <br>
+            <input class="text_email" type="text" placeholder="email"> <br>
+            <input class="text_message" type="text" placeholder="message" ><br>
+            <button type="button" onclick="showtext()">Send</button>
+            <p id="footer_message"></p>
+
+             </div>
+
+
+        <div class="footer_icon" >
+            <img src="images/kazuha_logo.png" alt="logo2"><br>
+            <h2>Kazuha's Store</h2>    
+        </div>
+
+        <div class="social_media"> 
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/home/facebook.png" alt="fb icon">
+            </a> &nbsp;
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/home/twitter.png" alt="twitter icon" >
+            </a>&nbsp;
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/home/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+
+        <div class="footer_text">Personal Site © 2022 - Paul Andre Arcos Bejarano</div>
 
     </footer>
     
 </div>
+
+
 </body>
 </html>

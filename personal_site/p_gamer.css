@@ -210,3 +210,109 @@ footer {
 
 }
 
+/*   ************************  */
+
+.main_gamer{
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url('images/page3_gamer/back2.jpg');
+}
+
+.part1{
+    display: grid;
+    grid-template-columns: 20px 1.5fr 200px 1fr 1fr 20px;
+    grid-template-rows: 25px auto 25px;
+    grid-gap: 20px;
+
+
+}
+
+.p1_p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    color: white;
+    font-size: 80%;
+    margin: auto auto;
+    background-color:  rgba(188, 188, 188, 0.1);;
+
+}
+
+
+.img_offers{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    width: 100%;
+    margin-left: 5%;
+    border-top: 8px solid rgb(188,188,188);
+    border-bottom: 8px solid rgb(188,188,188);
+    border-left: 8px solid rgb(188,188,188);
+    border-right: 0px solid rgb(188,188,188);
+
+}
+
+.p1_p2{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    color: white;
+    font-size: 85%;
+    border-top: 8px solid rgb(188,188,188);
+    border-bottom: 8px solid rgb(188,188,188);
+    border-left: 0px solid rgb(188,188,188);
+    border-right: 8px solid rgb(188,188,188);
+   
+}
+
+
+
+.part2{
+    display: grid;
+    grid-template-columns: 20px 2fr 2fr   0.5fr 1fr 20px;
+    grid-template-rows: 25px auto 25px;
+    grid-gap: 20px;
+}
+
+
+.p2_p{
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    color: white;
+    font-size: 85%;
+   /* border: 8px solid rgb(188,188,188);*/
+    background-color:  rgba(23,23,23,0.8);;
+
+    border-top: 8px solid rgb(188,188,188);
+    border-bottom: 8px solid rgb(188,188,188);
+    border-left: 8px solid rgb(188,188,188);
+    border-right: 8px solid rgb(188,188,188);
+}
+.p2_img{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 100%;
+    margin-left: -4.6%;
+   /* border: 8px solid rgb(188,188,188);*/
+    border-top: 8px solid rgb(188,188,188);
+    border-bottom: 8px solid rgb(188,188,188);
+    border-left: 8px solid rgb(188,188,188);
+    border-right: 8px solid rgb(188,188,188);
+}
+
+.gamer_icons{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    display: block;
+    margin: auto auto;
+    text-align: center;
+
+}
+
+.gamer_icons img{
+    width: 80px;
+    height: 80px;  
+
+}
+

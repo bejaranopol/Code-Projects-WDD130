@@ -4,9 +4,44 @@
     margin: 0 auto;
     font-family: Kiwi Maru, Helvetica, sans-serif;
     font-size: 22px;
-  
+}
+.header_pages {
+    background-color: rgba(248, 78, 0, 0.9);
+    display: grid;
+    grid-template-columns: 150px auto; 
+}
+
+.p2_logo{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.header_pages nav a{
+    /*background-color:rgba(59, 96, 219, 0);*/
+   /* background-color: skyblue;*/
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
 
 }
+.header_pages nav a:hover{
+    background-color:  #6E816E   ;
+    color: white;
+    font-size: 110%;
+
+}
+
+.header_pages nav {
+
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
 
 body {
     background-color: rgba(62, 108, 106, 0.9);

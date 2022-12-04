@@ -9,8 +9,7 @@
     background-color: rgba(248, 78, 0, 0.9);
     display: grid;
     grid-template-columns: 150px auto; 
-}
-
+ }
 .p2_logo{
     width: 80%;
     margin-left: 5%;
